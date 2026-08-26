@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qingan15gh · 开发者主页</title>
+<meta name="description" content="Qingan15gh 的个人主页——开发者、开源爱好者。GitHub 实时数据驱动。">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/321433509?v=4&s=64">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<!-- ===== 导航 ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Qingan15gh</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">项目</a>
+      <a href="#stats">数据</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="切换菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-inner reveal">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <img class="avatar"
+             src="https://avatars.githubusercontent.com/u/321433509?v=4&s=480"
+             alt="Qingan15gh 的头像"
+             width="480" height="480">
+        <span class="online-dot" title="GitHub 在线"></span>
+      </div>
+      <p class="hero-kicker">你好，我是</p>
+      <h1 class="hero-name">Qingan15gh<span class="cursor">_</span></h1>
+      <p class="hero-role">开发者 · 开源探索者 · 终身学习者</p>
+      <p class="hero-tagline">用代码把想法变成现实。这个主页由 GitHub 数据实时驱动，记录我的成长轨迹。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/Qingan15gh" target="_blank" rel="noopener">
+          GitHub 主页 ↗
+        </a>
+        <a class="btn btn-ghost" href="#contact">联系我</a>
+      </div>
+      <div class="hero-meta">
+        <span>账号创建于 <b id="createdDate">2026-08-26</b></span>
+        <span>·</span>
+        <span>位于中国 · UTC+8</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 关于 ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">关于我 <span class="section-sub">About</span></h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>🌱 现在</h3>
+          <p>正在 GitHub 上开启我的开源之旅。这是一个全新的起点，我会慢慢把想法沉淀成代码，把学习的过程记录下来。</p>
+          <h3>🎯 方向</h3>
+          <p>Web 开发 · 前端与后端 · 工具链与自动化。对新事物保持好奇，喜欢把复杂问题拆成简单步骤。</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>✍️ 信条</h3>
+          <p>「从今天开始，写一点东西。」—— 哪怕只是一行代码，也在让自己变得更好。</p>
+          <h3>📫 联系方式</h3>
+          <p>GitHub 私信或邮件。页脚有 GitHub 入口，任何想法、建议、合作都欢迎。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 技能 ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">技能 <span class="section-sub">Skills</span></h2>
+      <p class="section-desc reveal">正在学习和深耕的方向（自行增删替换）：</p>
+      <div class="skills" id="skillsList">
+        <span class="chip">HTML / CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Python</span>
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">数据库</span>
+        <span class="chip">自动化</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 项目 ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">项目 <span class="section-sub">Projects</span></h2>
+      <p class="section-desc reveal">以下内容从 <a href="https://api.github.com/users/Qingan15gh/repos" target="_blank" rel="noopener" class="link-inline">GitHub API</a> 实时拉取，有新仓库自动展示。</p>
+      <div class="projects" id="projectsList">
+        <div class="card skeleton">加载中…</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 数据 ===== -->
+  <section class="section section-alt" id="stats">
+    <div class="container">
+      <h2 class="section-title reveal">数据 <span class="section-sub">Stats</span></h2>
+      <p class="section-desc reveal">从 GitHub 实时统计，见证成长。</p>
+      <div class="stats" id="statsGrid">
+        <div class="stat-card skeleton">—</div>
+        <div class="stat-card skeleton">—</div>
+        <div class="stat-card skeleton">—</div>
+        <div class="stat-card skeleton">—</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 联系 ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">联系 <span class="section-sub">Contact</span></h2>
+      <div class="contact-card reveal">
+        <p class="contact-line">想一起做点有趣的事？随时找我 👋</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/Qingan15gh" target="_blank" rel="noopener">
+            GitHub ↗
+          </a>
+          <a class="btn btn-ghost" href="mailto:qingan15gh@example.com">写邮件</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year">2026</span> <a href="https://github.com/Qingan15gh" target="_blank" rel="noopener">@Qingan15gh</a> · 数据来自 GitHub API</p>
+    <p class="footer-note">用 <span class="heart">♥</span> 构建 · Hosted on GitHub Pages</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
